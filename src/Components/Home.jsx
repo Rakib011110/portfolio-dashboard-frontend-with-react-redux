@@ -24,7 +24,7 @@ const Home = () => {
   };
 
   if (isLoading) return <p>Loading blogs...</p>;
-  if (error) return <p className="text-red-500">Failed to load blogs.</p>;
+  if (error) return <p className="text-red-500">Failed to load blogs......</p>;
 
   return (
     <div className="container mx-auto py-6 px-4">
