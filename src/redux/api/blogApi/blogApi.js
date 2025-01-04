@@ -18,6 +18,7 @@ export const blogsApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: ["Blog"],
     }),
+
     updateBlog: builder.mutation({
       query: ({ id, blogData }) => ({
         url: `/blogs/${id}`,
@@ -26,6 +27,7 @@ export const blogsApi = baseApi.injectEndpoints({
       }),
       invalidatesTags: (result, error, { id }) => [{ type: "Blog", id }],
     }),
+
     deleteBlog: builder.mutation({
       query: (id) => ({
         url: `/blogs/${id}`,

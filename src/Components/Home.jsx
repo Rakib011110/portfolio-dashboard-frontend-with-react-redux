@@ -6,20 +6,16 @@ import {
 
 const Home = () => {
   const { data: blogs, isLoading, error } = useFetchBlogsQuery({});
+  console.log(blogs);
   const [deleteBlog] = useDeleteBlogMutation();
 
   const handleDelete = async (id) => {
-    const confirmed = window.confirm(
-      "Are you sure you want to delete this blog?"
-    );
-    if (confirmed) {
-      try {
-        await deleteBlog(id);
-        alert("Blog deleted successfully!");
-      } catch (err) {
-        console.error("Error deleting blog:", err);
-        alert("Failed to delete the blog.");
-      }
+    try {
+      await deleteBlog(id);
+      alert("Blog deleted successfully!");
+    } catch (err) {
+      console.error("Error deleting blog:", err);
+      alert("Failed to delete the blog.");
     }
   };
 
@@ -32,7 +28,7 @@ const Home = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogs?.map((blog) => (
           <div
-            key={blog.id}
+            key={blog._id}
             className="bg-white shadow-md rounded-lg overflow-hidden border">
             {/* Blog Image */}
             {blog.photoUrl && (
@@ -70,7 +66,7 @@ const Home = () => {
             {/* Delete Button */}
             <div className="p-4 border-t flex justify-between items-center">
               <button
-                onClick={() => handleDelete(blog.id)}
+                onClick={() => handleDelete(blog._id)}
                 className="bg-red-500 text-white py-1 px-4 rounded hover:bg-red-600">
                 Delete
               </button>
