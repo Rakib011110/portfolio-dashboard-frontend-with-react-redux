@@ -42,24 +42,35 @@ const BlogForm = () => {
   const handleImageChange = async (e) => {
     const file = e.target.files[0];
     if (file) {
-      setImagePreview(URL.createObjectURL(file));
+      setImagePreview(URL.createObjectURL(file)); // Show preview
       const uploadedUrl = await uploadToCloudinary(file);
-      setImage(uploadedUrl);
+      if (uploadedUrl) {
+        setImage(uploadedUrl); // Set only if upload is successful
+      } else {
+        console.error("Failed to upload the image.");
+        alert("Image upload failed. Please try again.");
+        setImagePreview(null); // Reset preview on failure
+      }
     }
   };
 
   const onSubmit = async (data) => {
+    if (!image) {
+      alert("Please upload an image before submitting.");
+      return;
+    }
+
     const blogData = {
       ...data,
-      photoUrl: image,
+      photoUrl: image, // Ensure image URL is added here
     };
-    console.log("Blog Data:", blogData);
 
     try {
+      console.log("Submitting blog data:", blogData); // Debug log
       await createBlog(blogData).unwrap();
       console.log("Blog created successfully");
     } catch (error) {
-      console.error("Create Blog Error:", error);
+      console.error("Error creating blog:", error);
     }
   };
 
