@@ -62,7 +62,7 @@ const BlogForm = () => {
 
     const blogData = {
       ...data,
-      photoUrl: image, // Ensure image URL is added here
+      photoUrl: image,
     };
 
     try {

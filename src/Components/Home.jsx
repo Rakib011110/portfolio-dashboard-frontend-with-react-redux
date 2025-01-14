@@ -3,11 +3,14 @@ import {
   useFetchBlogsQuery,
   useDeleteBlogMutation,
 } from "../redux/api/blogApi/blogApi";
+import { useGetProjectQuery } from "../redux/api/projectsApi/projectsApi";
 
 const Home = () => {
   const { data: blogs, isLoading, error } = useFetchBlogsQuery({});
-  console.log(blogs);
   const [deleteBlog] = useDeleteBlogMutation();
+
+  const { data: projects } = useGetProjectQuery();
+  console.groupEnd(projects);
 
   const handleDelete = async (id) => {
     try {

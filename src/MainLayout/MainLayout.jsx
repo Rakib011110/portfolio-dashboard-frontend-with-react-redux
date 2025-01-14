@@ -9,9 +9,9 @@ const MainLayout = () => {
 
       <div className="flex flex-grow">
         {/* Sidebar */}
-        <aside className="w-64 bg-white shadow-md">
+        <aside className="w-64 text-xl bg-white shadow-md">
           <div className="p-4">
-            <h2 className="text-lg font-semibold text-gray-700">Navigation</h2>
+            {/* <h2 className="text-lg font-semibold text-gray-700">Navigation</h2> */}
           </div>
           <nav className="space-y-2 p-4">
             <Link
@@ -37,12 +37,6 @@ const MainLayout = () => {
               className="flex items-center space-x-2 text-gray-600 hover:bg-gray-200 p-2 rounded-md">
               <span>📖</span>
               <span>About Me</span>
-            </Link>
-            <Link
-              to="/contact"
-              className="flex items-center space-x-2 text-gray-600 hover:bg-gray-200 p-2 rounded-md">
-              <span>📬</span>
-              <span>Contact</span>
             </Link>
           </nav>
         </aside>

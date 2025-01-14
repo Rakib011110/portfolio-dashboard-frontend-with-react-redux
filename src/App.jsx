@@ -5,6 +5,9 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import MainLayout from "./MainLayout/MainLayout";
 import CreateBlog from "./Components/CreateBlog/CreateBlog";
+import Projects from "./Components/Projects/Projects";
+import Login from "./Components/Pages/Login/Login";
+import Register from "../../personal-website/src/Components/Pages/Register/Register";
 
 function App() {
   return (
@@ -15,7 +18,10 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="blogs" element={<CreateBlog />} />
+            <Route path="projects" element={<Projects />} />
           </Route>
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </Router>
