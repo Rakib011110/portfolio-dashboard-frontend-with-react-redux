@@ -1,98 +1,66 @@
 [
   {
-    "title": "Introduction to React.js",
-    "content": "React.js is a powerful JavaScript library for building user interfaces. It allows developers to create reusable UI components, manage the state of their applications efficiently, and build dynamic and interactive web pages. Whether you're new to web development or looking to expand your skill set, understanding React.js is a valuable asset for modern development. Learn about JSX, props, and the component lifecycle in this beginner-friendly guide.",
-    "author": "John Doe",
-    "tags": ["React", "JavaScript", "Frontend"],
-    "photoUrl": "https://www.spec-india.com/wp-content/uploads/2024/08/Main-1-1024x563.jpg",
-    "createdAt": "2024-01-15T10:00:00Z"
+    "title": "Titans Arena",
+    "description": "This platform serves as the primary source for official game information and early access pre-registration. It enhances the gaming experience with esports tools and an enriching blog for insightful discussions. The platform fosters a strong gaming community, prioritizing secure connectivity and cross-device compatibility.",
+    "technologies": [
+      "React",
+      "Tailwind CSS",
+      "Daisy UI",
+      "Redux Toolkit (RTK Query)",
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT"
+    ],
+    "githubLink": {
+      "client": "https://github.com/Rakib011110/titans-arena-client",
+      "server": "https://github.com/Rakib011110/titans-arena-server"
+    },
+    "liveDemoLink": "https://silver-cassata-e39a11.netlify.app/",
+    "photoUrl": "https://res.cloudinary.com/dqp2vi7h1/image/upload/v1736870219/screencapture-silver-cassata-e39a11-netlify-app-2025-01-14-21_49_30_qmeiyg.png"
   },
   {
-    "title": "Mastering CSS Grid",
-    "content": "CSS Grid is a layout system that provides a more straightforward and flexible way to design web pages. With its grid-based layout, you can easily arrange elements in rows and columns without complex floats or positioning. In this guide, you’ll learn how to use CSS Grid to create responsive and visually appealing web designs. By mastering properties like 'grid-template-columns' and 'grid-gap', you'll build layouts that adapt beautifully to any screen size.",
-    "author": "Jane Smith",
-    "tags": ["CSS", "Frontend", "Web Design"],
-    "photoUrl": "https://miro.medium.com/v2/resize:fit:1400/1*-Wk7w5VlLZ8u1JtwRHZE4Q.png",
-    "createdAt": "2024-01-20T12:30:00Z"
+    "title": "ShopHaven",
+    "description": "A comprehensive online shopping platform for users, vendors, and admins. It features product comparison, secure payments, vendor dashboards, and a scalable API. Designed with responsive layouts and secure transactions to ensure excellent performance across devices.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "Next.js",
+      "Tailwind CSS",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Prisma"
+    ],
+    "githubLink": {
+      "client": "https://github.com/Rakib011110/shophaven-client",
+      "server": "https://github.com/Rakib011110/shophaven-server"
+    },
+    "liveDemoLink": "https://shophaven-demo.com",
+    "photoUrl": "https://res.cloudinary.com/dqp2vi7h1/image/upload/v1736870219/screencapture-silver-cassata-e39a11-netlify-app-2025-01-14-21_49_30_qmeiyg.png"
   },
   {
-    "title": "Understanding Node.js Event Loop",
-    "content": "The Node.js event loop is the heart of its asynchronous capabilities. It allows Node.js to handle multiple operations simultaneously, such as reading files, processing requests, and working with databases. This article simplifies the concept of the event loop, explaining how it works with callbacks, promises, and async/await. Whether you're a beginner or experienced developer, understanding the event loop is crucial for building efficient Node.js applications.",
-    "author": "Alice Johnson",
-    "tags": ["Node.js", "Backend", "JavaScript"],
-    "photoUrl": "https://ixorasolution.com/wp-content/uploads/Understanding-the-Node.js-Event-Loop-1300x731.jpg",
-    "createdAt": "2024-01-25T15:45:00Z"
-  },
-  {
-    "title": "Getting Started with TypeScript",
-    "content": "TypeScript is a superset of JavaScript that adds static typing to your code, making it easier to identify and fix errors early. This guide introduces TypeScript's basic features, including type annotations, interfaces, and classes. By the end, you'll understand how TypeScript improves code quality and how to integrate it into your existing JavaScript projects. Whether you're building small scripts or large applications, TypeScript is a game-changer.",
-    "author": "Mark Lee",
-    "tags": ["TypeScript", "JavaScript", "Development"],
-    "photoUrl": "https://cdn.hashnode.com/res/hashnode/image/upload/v1681502860304/b6ed699b-575f-4468-b426-ee620ec720ce.png",
-    "createdAt": "2024-01-30T09:20:00Z"
-  },
-  {
-    "title": "Top 10 Web Performance Optimization Tips",
-    "content": "Web performance directly affects user experience and search engine rankings. This article covers the top 10 tips for optimizing your website, such as minimizing HTTP requests, enabling compression, and using a content delivery network (CDN). You’ll also learn about lazy loading images and reducing JavaScript and CSS file sizes. By applying these techniques, you can ensure faster load times and happier users.",
-    "author": "Emily Davis",
-    "tags": ["Web Performance", "Optimization", "Frontend"],
-    "photoUrl": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200504230050/7-Tips-For-Performances-Optimization-in-Web-Development.png",
-    "createdAt": "2024-02-01T11:10:00Z"
-  },
-  {
-    "title": "Building RESTful APIs with Express.js",
-    "content": "RESTful APIs are essential for modern web applications, and Express.js is a lightweight and flexible framework that simplifies API development. In this guide, you’ll learn how to set up routes, handle HTTP methods, and connect your API to a database. We also cover best practices for structuring your project and securing your API. By the end, you'll be ready to build APIs that are robust and easy to maintain.",
-    "author": "Michael Brown",
-    "tags": ["Express.js", "Node.js", "Backend"],
-    "photoUrl": "https://blog.postman.com/wp-content/uploads/2020/07/API-101-What-Is-a-REST-API-scaled.jpg",
-    "createdAt": "2024-02-05T14:00:00Z"
-  },
-  {
-    "title": "The Future of Web Development with WebAssembly",
-    "content": "WebAssembly (Wasm) is changing the way we think about web development by enabling near-native performance for web applications. This guide explains what WebAssembly is, how it works, and why it’s becoming a popular choice for developers. Learn how WebAssembly integrates with JavaScript and how it can improve performance for tasks like video editing, games, and scientific simulations.",
-    "author": "Sarah Wilson",
-    "tags": ["WebAssembly", "Web Development", "Performance"],
-    "photoUrl": "https://media.licdn.com/dms/image/v2/D4D12AQF3PKE9bBKVRA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1684847066360?e=2147483647&v=beta&t=F9de79G7jLt48ZLUWJRALULYbhgVch9ToEHMSzxYsAU",
-    "createdAt": "2024-02-10T16:00:00Z"
-  },
-  {
-    "title": "Understanding Flexbox in CSS",
-    "content": "Flexbox is a modern CSS layout system that simplifies creating flexible and responsive layouts. This tutorial covers the basics, including flex container properties like 'justify-content' and 'align-items'. You'll also learn about flex items and how they adapt to different screen sizes. By mastering Flexbox, you can design layouts that work seamlessly across various devices.",
-    "author": "David Miller",
-    "tags": ["CSS", "Flexbox", "Web Design"],
-    "photoUrl": "https://www.syncfusion.com/blogs/wp-content/uploads/2023/03/CSS-Flex-What-Every-Developer-Should-Know.png",
-    "createdAt": "2024-02-12T18:20:00Z"
-  },
-  {
-    "title": "Exploring Next.js Features",
-    "content": "Next.js is a React framework that simplifies building web applications with features like server-side rendering (SSR) and static site generation (SSG). This guide explores these features and how they improve performance and SEO. You’ll also learn about API routes and dynamic routing in Next.js. Whether you're building a blog or a complex application, Next.js has tools to make your development process smoother.",
-    "author": "Laura Kim",
-    "tags": ["Next.js", "React", "Frontend"],
-    "photoUrl": "https://miro.medium.com/v2/resize:fit:1400/1*oF3PO-umvFeZDgU-OdaRDQ.png",
-    "createdAt": "2024-02-15T20:30:00Z"
-  },
-  {
-    "title": "Secure Web Applications with OAuth 2.0",
-    "content": "OAuth 2.0 is the industry-standard protocol for secure authorization. This article breaks down its key concepts, such as access tokens and scopes, and explains how to implement it in your web applications. Whether you're building a login system or integrating third-party services, OAuth 2.0 ensures secure and reliable access control.",
-    "author": "James Carter",
-    "tags": ["OAuth", "Security", "Authentication"],
-    "photoUrl": "https://media.licdn.com/dms/image/v2/D4D12AQENPtOBy2N3ig/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721186268690?e=2147483647&v=beta&t=N-jJKBJ1ebiy2xx86ocBqRrXKgnYUnoj6ghgCDHeUZs",
-    "createdAt": "2024-02-18T08:50:00Z"
-  },
-  {
-    "title": "Introduction to Progressive Web Apps (PWAs)",
-    "content": "Progressive Web Apps (PWAs) combine the best of web and mobile apps. They work offline, load quickly, and provide a seamless user experience. This guide covers the basics of building PWAs, including using service workers, manifest files, and caching strategies. By creating a PWA, you can deliver a high-quality experience to your users, regardless of their network conditions.",
-    "author": "Sophia White",
-    "tags": ["PWA", "Web Development", "Frontend"],
-    "photoUrl": "https://blog.openreplay.com/images/impact-of-progressive-web-apps-on-web-design/images/hero.png",
-    "createdAt": "2024-02-20T12:00:00Z"
-  },
-  {
-    "title": "Scaling Your Backend with Microservices",
-    "content": "Microservices architecture allows you to build scalable and maintainable backend systems. This article explains the principles of microservices, including decoupling, scalability, and independent deployments. Learn how to design microservices, choose communication methods like REST or gRPC, and handle challenges like data consistency. With microservices, you can create systems that grow with your business needs.",
-    "author": "Daniel Green",
-    "tags": ["Microservices", "Backend", "Architecture"],
-    "photoUrl": "https://miro.medium.com/v2/resize:fit:1200/0*eh3cnwCbEOoBWEOX.jpg",
-    "createdAt": "2024-02-22T10:15:00Z"
+    "title": "Toy Store",
+    "description": "This website offers a wide range of kids' toys with detailed information accessible upon login. It includes easy-to-use search functionality, allowing users to quickly find specific toys by name. Additionally, JWT ensures enhanced user security for safe browsing.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Express.js",
+      "Tailwind CSS",
+      "Daisy UI",
+      "Node.js",
+      "MongoDB",
+      "JWT"
+    ],
+    "githubLink": {
+      "client": "https://github.com/Rakib011110/toy-store-client",
+      "server": "https://github.com/Rakib011110/toy-store-server"
+    },
+    "liveDemoLink": "https://toy-store-demo.com",
+    "photoUrl": "https://example.com/images/toy-store.png"
   }
 ]
